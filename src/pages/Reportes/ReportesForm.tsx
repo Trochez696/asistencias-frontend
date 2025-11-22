@@ -20,7 +20,7 @@ const ReportesForm: React.FC = () => {
   useEffect(() => {
     const cargarDocentes = async () => {
       try {
-        const resp = await fetch("http://localhost:3000/api/docentes");
+        const resp = await fetch("http://localhost:3000/docentes");
         const data = await resp.json();
 
         // Asegurar que siempre sea un array
